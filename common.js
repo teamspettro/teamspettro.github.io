@@ -15,24 +15,16 @@ $(document).ready(() => {
         $("nav").html(`
 <div class="brand">
     <a href="/">
-        <div class="d-flex">
+        <div class="d-flex teamspettro-button">
         <img src="/img/spettro-white.png" style="width:40px; height:40px">
-            <div style="color: #ffffff; font-family: Raleway;" class="align-self-center">Team Spettro </div>            
+            <div class="align-self-center teamspettro-logo">Team Spettro </div>            
         </div>
     </a>
 </div>
 <div class="vr" style="width: 10px; z-index:10;"></div>
 <div class="separator"></div>
 <div class="vr" style="width: 10px; z-index:10;"></div>
-<div>
-    <a href="/blog">
-        <div class="d-flex">
-        <div class="topbar-item">Blog</div>      
-        </div>
-    </a>
-    <div class="vr" style="width: 10px; z-index:10;"></div>
-</div>
-<div class="vr" style="width: 10px; z-index:10;"></div>
+
 <div>
     <a href="/contact">
         <div class="d-flex">
@@ -42,14 +34,7 @@ $(document).ready(() => {
     <div class="vr" style="width: 10px; z-index:10;"></div>
 </div>
 <div class="vr" style="width: 10px; z-index:10;"></div>
-<div>
-    <a href="/hiring">
-        <div class="d-flex">
-        <div class="topbar-item">Join us</div>      
-        </div>
-    </a>
-    <div class="vr" style="width: 10px; z-index:10;"></div>
-</div>
+
 `);
 
 

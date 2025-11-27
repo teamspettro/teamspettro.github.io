@@ -28,7 +28,7 @@
     <link rel="stylesheet" type="text/css" href="/style.css">
     <link rel="stylesheet" type="text/css" href="/globalCSS.css">
     <script src="/common.js"></script>
-    <script src="/script.js"></script>
+    <script src="/animations.js"></script>
 
     <!-- ICON STUFF -->
     <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
@@ -42,7 +42,7 @@
     <!-- NAV WILL GET AUTOMATICALLY ADDED BY JS -->
     <nav></nav>
     <main>
-        <div class="header" style="background-color: black; background-image: none;">
+        <div class="header-smaller" style="background-color: black; background-image: none;">
             <div class="container-styleless">
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-6" style="position: relative;">
@@ -50,7 +50,8 @@
                             <img src="../img/hoc.png" width="300" height="300" style="z-index: 1;">
                         </div>
 
-                        <div class="fade-in" style="animation-delay: 4s; position: absolute; top: 0; left: 0; z-index: 2;">
+                        <div class="fade-in"
+                            style="animation-delay: 4s; position: absolute; top: 0; left: 0; z-index: 2;">
                             <div class="grow-shrink" style="animation-delay: 4s;">
                                 <img src="../img/LogoMonospace.png" width="300" height="300" style="scale: 75%;">
                             </div>
@@ -61,30 +62,90 @@
         </div>
 
         <hr>
-        <div class="wrapper">
-            <div class="container-fluid">
+        <div class="d-flex justify-content-center">
+            <div class="wrapper" style="max-width: 1200px;">
                 <div class="row">
-                    <div class="col-12 col-lg-4">
-                        <div class="image-view p-0 ">
-                            <img src="../img/site-boxart.png" style="aspect-ratio: 1; max-width: 450px;">
+                    <!-- Point 0 (White Theme) -->
+                    <div class="container-styleless ms_point_container_0">
+                        <h1 class="text-left ms_point_titletext ms_point_bottomborder">
+                            &gt;&gt;&gt; An Unknown Dimension</h1>
+                        <div class="row">
+<!-- Whenever I figure out how to do masks in CSS, i'll make this dynamically glow with a colormap -->
+                            <div class="col-sm justify-content-center">
+
+                                <img src="../img/ms-point0.png" width="470" height="470" >
+                            </div>
+                            <div
+                                class="col-12 mt-4 mt-lg-0 col-lg-7 d-flex flex-column justify-content-center ms_point_leftborder">
+
+
+                                <h2 class="text-left ms_point_desctext">
+                                    It was a normal and sunny summer day in the town of Aquarel... until an extra-dimensional being by the name of <b>Vexer</b> arrived on Earth and sent it into chaos, creating portals to other dimensions in the process.<br> <b>Mono Blackray</b> happens to be in the right place at the wrong time, and ends up in the mono-chromatic geometrical dimension of <b>Corollorum.</b> </h2>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-12 mt-4 mt-lg-0 col-lg-7 d-flex flex-column justify-content-center">
-                        <h1 class="text-left font-weight-bold" style="font-size: 55px;">Welcome to Corollorum</h1>
-                        <h2 class="text-left">
-                            It's a beautiful summer day in the town of Aquarel, where everything was bright and
-                            colorful - until it wasn't.
-                            <br>
-                            Welcome to <i><b>Mono-Space</b></i>, a 2D Puzzle Platformer where you take on the
-                            role of <br><b>Mono Blackray</b>, a teenager who finds themselves trapped in an
-                            alternative dimension known as <b>Corollorum</b>, where everything is monochrome and
-                            geometrical.
-                        </h2>
+
+                    <!-- Point 1 (Black Theme) -->
+                    <div class="container-styleless ms_point_container_1">
+                        <h1 class="text-left ms_point_titletext_white ms_point_bottomborder_white">
+                            &gt;&gt;&gt; The Heart of Corollorum</h1>
+                        <div class="row">
+
+                            <div class="col-sm justify-content-center">
+
+                                <img src="../img/ms-point1combined.png" width="470" height="470" >
+                            </div>
+
+                            <div
+                                class="col-12 mt-4 mt-lg-0 col-lg-7 d-flex flex-column justify-content-center ms_point_leftborder_white">
+                                <h2 class="text-left ms_point_desctext_white">
+                                The mythical and ancient <br><mark style="color: white;">Heart of Corollorum</mark>, an entity capable of modifying the dimension, was stolen long ago.<br>Whoever absorbs it becomes a <b style="color: white;">color-shifter</b>,  guardian of the dimension and someone who can change the colors and properties of it at will. There has been no color-shifter in centuries, and Mono is destined to become the next one.
+                                </h2>
+                            </div>
+                        </div>
                     </div>
+                    <!-- Point 2 (Red Theme) -->
+                    <div class="container-styleless ms_point_container_2">
+                        <h1 class="text-left ms_point_titletext ms_point_bottomborder">
+                            &gt;&gt;&gt; Mysterious Environments</h1>
+                        <div class="row">
+
+                            <div class="col-sm justify-content-center">
+                                <img src="../img/mspoint-2.png" width="470" height="470" style="">
+                            </div>
+
+                            <div
+                                class="col-12 mt-4 mt-lg-0 col-lg-7 d-flex flex-column justify-content-center ms_point_leftborder">
+
+
+                                <h2 class="text-left ms_point_desctext">
+                                    Leaving the dimension requires a color-shifter with a complete and charged Heart of Corollorum, however it has been split into 3 pieces by whomever stole it. The dimension is big and diverse, with various structures and biomes taken from foreign dimensions. Will Mono and his new friends make it out of the dimension in one piece?
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Point 3 (Blue Theme) -->
+                    <!-- <div class="container-styleless ms_point_container_3"> -->
+                        <!-- <h1 class="text-left ms_point_titletext_white ms_point_bottomborder_white"> -->
+                            <!-- &gt;&gt;&gt; CARD</h1> -->
+                        <!-- <div class="row"> -->
+
+                            <!-- <div class="col-sm justify-content-center"> -->
+
+                                <!-- <img src="../img/point33.png" width="470" height="470" > -->
+                            <!-- </div> -->
+
+                            <!-- <div -->
+                                <!-- class="col-12 mt-4 mt-lg-0 col-lg-7 d-flex flex-column justify-content-center ms_point_leftborder_white"> -->
+
+
+                                <!-- <h2 class="text-left ms_point_desctext_white"> -->
+                                    <!-- PLACEHOLDERRRRRRRRRRRRRRRRRRRR! -->
+                            <!-- </div> -->
+                        <!-- </div> -->
+                    <!-- </div> -->
                 </div>
             </div>
-        </div>
-
         </div>
         <hr>
         <!-- Container 2 -->
@@ -94,20 +155,10 @@
                     <!-- remove the margin when a new solution comes about to align the 2 contents-->
                     <div class="col-12 mt-4 mt-lg-0 col-lg-7 d-flex flex-column justify-content-center"
                         style="margin-left: 2.5%;">
-                        <h1 class="text-left font-weight-bold" style="font-size: 55px;">The Heart of Corollorum</h1>
+                        <h1 class="text-left font-weight-bold" style="font-size: 55px;">Game Information</h1>
                         <h2 class="text-left ">
-                            Deep within the mysterious dimension of Corollorum lies a powerful device, known as the
-                            <br><b>Heart
-                                of Corollorum</b>.
-                            Those who possess the heart are granted immense power, allowing them to manipulate the
-                            very
-                            fabric
-                            of the dimension
-                            and unlock new realms of possibilities. However, should the Heart be destroyed,
-                            Corollorum
-                            itself
-                            will be plunged into
-                            darkness and cease to exist.
+                            <b>Mono-Space</b> is a 2D platformer that focuses on physics and platforming challenges utilizing the mechanic of "color-shifting", where you change the colors of the dimension to make layers of the dimension appear and dissapear.
+                            Alongside the color-shifting mechanic, you also get a magnetic bracelet named the Hyperllorum Bracelet, which allows you to interact with the environment using magnetism.
                         </h2>
                     </div>
                     <div class="col-12 col-lg-4">
@@ -119,7 +170,6 @@
             </div>
         </div>
 
-        <hr>
         <!-- Container 3 (Gallery) -->
         <!-- <div class="container">
             <h3 class="text-center">Screenshots</h3>
@@ -155,16 +205,15 @@
         <hr>
         <div class="container">
             <h3 class="text-center">
-                Gameplay
+                Trailer
             </h3>
             <div style="display:flex; justify-content:left;">
 
             </div>
             <div style="display:flex; justify-content:right;">
                 <h4 style="padding: 70px 50px 50px;">
-                    Mono-Space is currently in the beta stage of development and as such, the gameplay is
-                    subject to change.<br> Utilizing the Unity engine, Mono-Space is currently expected to be
-                    released in <b>2025.</b></h4>
+                    Mono-Space is currently in the beta stage of development and as such the gameplay is
+                    subject to change.<br> <br>Release date TBA.</h4>
                 </h4>
                 <iframe width="1024" height="280" src="https://www.youtube.com/embed/OGj_bsE80lE"
                     title="YouTube video player" frameborder="0"
@@ -172,12 +221,14 @@
                     allowfullscreen></iframe>
             </div>
         </div>
+        <hr>
         <div class="container">
             <h3 class="text-center">
                 Wishlist on Steam!
             </h3>
             <div style="display:flex; justify-content:center;">
-                <iframe src="https://store.steampowered.com/widget/2710430/" frameborder="0" width="646" height="190"></iframe>
+                <iframe src="https://store.steampowered.com/widget/2710430/" frameborder="0" width="646"
+                    height="190"></iframe>
 
             </div>
 
