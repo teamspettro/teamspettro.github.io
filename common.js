@@ -24,15 +24,7 @@ $(document).ready(() => {
 <div class="vr" style="width: 10px; z-index:10;"></div>
 <div class="separator"></div>
 <div class="vr" style="width: 10px; z-index:10;"></div>
-<div>
-    <a href="/blog">
-        <div class="d-flex">
-        <div class="topbar-item">Blog</div>      
-        </div>
-    </a>
-    <div class="vr" style="width: 10px; z-index:10;"></div>
-</div>
-<div class="vr" style="width: 10px; z-index:10;"></div>
+
 <div>
     <a href="/contact">
         <div class="d-flex">
